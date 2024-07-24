@@ -6,6 +6,7 @@ Problem: In a given map, where the cities are the nodes and the edges are the ro
         - heuristic - contains the straight line distances between each city and 'Bucharest', as the goal city for the informed searches in this problem will always be 'Bucharest'
 
 Depth-Frist Search
+
   Versatile algorithm useful for exploring all possible paths in a graph, particularly when the solution is expected to be deep in the graph rather than close to the starting point.
   Uses a stack data structure to keep track of the nodes to be explored. This stack can be implemented explicitly using a stack data (Last In, First Out) structure or implicitly using recursion. For this problem I used a stack data structure to show the difference between stacks and queues
   Starts at a given node and explores as far as possible along each branch before backtracking. This means it goes deep into the graph first before moving to the next branch.
@@ -17,6 +18,7 @@ Depth-Frist Search
         3.Repeat - Continue this process until all nodes are visited or a specific condition (such as finding a target node) is met.
 
 Breadth-First Search
+
   Similar to DFS, but it explores all the nodes at the present depth level before moving on to the nodes at the next depth level. This means it explores all nodes one level away, then all nodes two levels away, and so on.
   Uses a queue data structure to keep track of the nodes to be explored. Nodes are added to the queue in the order they are discovered and are processed in a first-in, first-out (FIFO) manner.
   Steps:
@@ -27,6 +29,7 @@ Breadth-First Search
         3.Repeat - Continue this process until all nodes are visited or a specific condition (such as finding a target node) is met.
 
 Greedy Best-First Search
+
   Greedy Best-First Search is a fast and straightforward algorithm that uses heuristics to guide its search. While it can quickly find a path in many cases, it does not guarantee the shortest path or even a path at all if one exists. It's best used when speed is more critical than optimality and completeness, and when a good heuristic is available to guide the search effectively.
   It always expands the node that appears to be closest to the goal, according to the heuristic.
   Key Concepts:
@@ -52,6 +55,7 @@ Greedy Best-First Search
         If the priority queue is empty and the goal has not been reached, return failure (no path exists).
 
 A* Search
+
   A* combines the strengths of both Dijkstra's algorithm and Greedy Best-First-Search by considering both the cost to reach a node and an estimate of the cost to reach the goal from that node.
   Key concepts:
       - Priority Queue: A* uses a priority queue (often implemented with a min-heap) to keep track of nodes to be explored, prioritizing nodes based on their total estimated cost.
