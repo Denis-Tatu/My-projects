@@ -1,0 +1,15 @@
+
+Player list :
+Player: Alice, number: 1
+Player: Bob, number: 2
+Player: Charlie, number: 3
+Player: David, number: 4
+Player: Eve, number: 5
+
+Order of elimination (counter: 6): 
+Player: Alice, number: 1 has been eliminated
+Player: Charlie, number: 3 has been eliminated
+Player: Bob, number: 2 has been eliminated
+Player: Eve, number: 5 has been eliminated
+
+Winner: Player: David, number: 4
